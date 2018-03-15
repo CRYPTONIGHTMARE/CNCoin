@@ -1,4 +1,4 @@
-# CNCoin v0.0.1 CLI
+# CNCoin v0.0.2 CLI
 
 ## QuickStart (Releases Binary)
 
