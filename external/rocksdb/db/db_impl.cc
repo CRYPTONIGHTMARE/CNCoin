@@ -598,6 +598,8 @@ static void DumpMallocStats(std::string* stats) {
 }
 #endif  // !ROCKSDB_LITE
 
+void DBImpl::MaybeDumpStats() {} // Quick and Dirty MacOS HACK
+/*
 void DBImpl::MaybeDumpStats() {
   if (db_options_.stats_dump_period_sec == 0) return;
 
@@ -642,7 +644,7 @@ void DBImpl::MaybeDumpStats() {
     PrintStatistics();
   }
 }
-
+*/
 uint64_t DBImpl::FindMinPrepLogReferencedByMemTable() {
   uint64_t min_log = 0;
 
